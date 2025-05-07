@@ -13,13 +13,15 @@ function App() {
   return (
     <>
       <Navbar />
-      <main>
+      <main className='w-full min-h-screen bg-[#060606] flex justify-center items-center'>
+      <div className="max-w-[90%] w-full">
         <section id="hero"><Hero /></section>
         <section id="about"><About /></section>
         <section id="stack"><Stack /></section>
         <section id="projects"><Projects /></section>
         <section id="resume"><Resume /></section>
         <section id="contact"><Contact /></section>
+        </div>
       </main>
       <Footer />
     </>

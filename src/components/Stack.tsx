@@ -4,9 +4,9 @@ import { stackData } from "../data/Stack.ts";
 
 const Stack: React.FC = () => {
     return (
-        <section className="">
-            <h2 className="">My Tech Stack</h2>
-            <div className="">
+        <section className="mt-40" id="stack">
+            <h2 className="text-3xl font-semibold">My Tech Stack</h2>
+            <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {stackData.map((group) => (
                     <StackComponent key={group.title} title={group.title} items={group.items} />
                 ))}

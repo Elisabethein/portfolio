@@ -1,29 +1,30 @@
 import React from 'react';
+import AboutCarousel from './subcomponents/ImageCarousel';
 
 const About: React.FC = () => {
   return (
-    <section className="">
-        <h2 className="">About Me</h2>
+    <section className="mt-40 flex flex-col sm:flex-row items-start justify-between px-4">
+      <div className="flex flex-col items-center sm:items-start mb-8 sm:mb-0">
+        <h2 className="text-3xl font-semibold">About Me</h2>
 
-        <div className=''>
-            <p className="">
-            I am a passionate Full Stack Developer with a knack for creating dynamic and responsive web applications. My journey in tech has been fueled by curiosity and a love for problem-solving.
+        <div className="mt-6">
+            <p className="mb-4">
+            I’m Elisabet Hein - currently in my final year of Computer Science at the University of Tartu! I love coding, especially anything to do with full-stack development or AI, and I’m always curious to try new tech and build cool stuff.
             </p>
-
-            <div className="mt-8">
-                <img
-                src="/src/assets/profile_pic.jpg"
-                alt="About Me"
-                className="w-40 h-40 object-cover shadow-lg"
-                />
-            </div>
-
-
-
+            <p className='mb-4'>
+            I’ve worked on all kinds of projects - from backend systems and APIs to fun data science experiments and UI/UX designs. Learning and growing are super important to me, whether that’s picking up a new framework or figuring out how to make things work better.
+            </p>
+            <p className='mb-4'>
+            Outside of code, I like staying active (hello gym life 💪), exploring new places, and occasionally diving into arts and crafts. Welcome to my page - feel free to look around!
+            </p>
         </div>
+      </div>
 
+      <div className="sm:w-1/2">
+          <AboutCarousel />
+      </div>
 
-        </section>
+    </section>
   );
 };
 

@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from "react";
 
 const Navbar: React.FC = () => {
+    const SCROLL_OFFSET = 160;
+
     const links = [
         { name: "Home", href: "#hero" },
         { name: "About", href: "#about" },
@@ -15,30 +17,34 @@ const Navbar: React.FC = () => {
     useEffect(() => {
         const handleScroll = () => {
           const scrollPos = window.scrollY;
+
           for (let i = 0; i < links.length; i++) {
             const section = document.querySelector(links[i].href);
             if (section) {
-              const offsetTop = (section as HTMLElement).offsetTop - 100;
+              const offsetTop = (section as HTMLElement).offsetTop - SCROLL_OFFSET;
               const offsetHeight = (section as HTMLElement).offsetHeight;
+
               if (scrollPos >= offsetTop && scrollPos < offsetTop + offsetHeight) {
                 setActive(links[i].href);
+                break;
               }
             }
           }
         };
     
-        window.addEventListener("scroll", handleScroll);
+        window.addEventListener("scroll", handleScroll, { passive: true });
         return () => window.removeEventListener("scroll", handleScroll);
       }, []);
 
 
       return (
-        <nav className="flex justify-center mt-6">
-          <ul className="flex bg-orange-100/20 backdrop-blur-md px-6 py-2 rounded-full gap-3">
+        <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[95%] sm:w-auto">
+          <ul className="flex flex-wrap justify-center bg-orange-100/20 backdrop-blur-md px-4 py-2 rounded-full gap-2 sm:gap-3">
             {links.map((link) => (
               <li key={link.name}>
                 <a
                   href={link.href}
+                  onClick={() => setActive(link.href)}
                   className={`relative px-4 py-2 rounded-full transition-colors duration-200
                     ${active === link.href
                       ? "text-orange-400 font-semibold"
@@ -46,7 +52,6 @@ const Navbar: React.FC = () => {
                     hover:text-orange-500
                   `}
                 >
-                  {/* background circle for selected link */}
                   {active === link.href && (
                     <span className="absolute inset-0 bg-orange-100 opacity-20 rounded-full -z-10"></span>
                   )}

@@ -6,31 +6,24 @@ interface Props {
 }
 
 const StackGroup = ({ title, items }: Props) => {
-    const getLevelColor = (level: string) => {
-        switch (level) {
-            case "expert":
-                return "text-green-400";
-            case "intermediate":
-                return "text-amber-300";
-            case "learning":
-                return "text-sky-400";
-            default:
-                return "text-gray-400";
-        }
-    }
 
     return (
-        <div className="bg-zinc-700 dark:bg-gray-800 shadow rounded-xl p-4">
-            <h3 className="text-xl font-semibold mb-4">{title}</h3>
-            <div className="flex flex-wrap gap-2 justify-start">
-                {items.map((item) => (
-                <span
-                    key={item.name}
-                    className={`inline-block ${getLevelColor(item.level)} px-2 py-1 rounded-md`}
-                >
-                    {item.name}
-                </span>
-                ))}
+        <div className="bg-orange-100/20 shadow rounded-xl p-4">
+            <h3 className="text-xl text-orange-200 font-semibold mb-8 mt-4">{title}</h3>
+            <div className="flex flex-wrap gap-3 justify-center items-center mb-8">
+            {items.map((item) => {
+                    const Icon = item.icon;
+
+                    return (
+                        <span
+                            key={item.name}
+                            className="inline-flex items-center gap-2 text-orange-100 bg-orange-100/20 font-medium px-4 py-2 rounded-full m-1 transition-transform duration-200 hover:scale-105 hover:animate-wiggle"
+                            >
+                            {Icon && <Icon className="w-5 h-5" />}
+                            {item.name}
+                        </span>
+                    );
+                })}
             </div>
         </div>
     );

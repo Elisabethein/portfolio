@@ -6,7 +6,7 @@ export const resumeData: Resume[] = [
         company: 'University of Tartu',
         startDate: 'September 2024',
         endDate: 'June 2025',
-        description: 'Developed the Emergency Alert Application for the Estonian Wildlife Center, a role-based web platform to enhance wildlife rescue coordination. Built and deployed the application using Vue.js (front-end), Java & Spring Boot (back-end), and PostgreSQL (database), while also configured and managed cloud server deployment. Simultaneously conducted my Bachelor’s thesis on AI-powered classification of disengagement events in autonomous driving, focusing on machine learning, data preprocessing, and explainable AI.',
+        description: 'Developed the Emergency Alert Application for the Estonian Wildlife Center, a role-based web platform to enhance wildlife rescue coordination. Built and deployed the application using Vue.js, Java & Spring Boot, and PostgreSQL, while also configured and managed cloud server deployment. Simultaneously conducted my Bachelor’s thesis on AI-powered classification of disengagement events in autonomous driving, focusing on deep learning, data preprocessing, and explainable AI.',
         location: 'Tartu',
     },
     {
@@ -14,7 +14,7 @@ export const resumeData: Resume[] = [
         company: 'Playtech Estonia',
         startDate: 'June 2024',
         endDate: 'September 2024',
-        description: 'I analyzed software requirements to enhance backend systems and frontend UX solutions, working closely with cross-functional teams to identify needs, design scalable solutions, and optimize overall functionality. I contributed to the design and development of new features for both backend systems and user-facing interfaces, gaining hands-on experience in troubleshooting, system analysis, and performance optimization. Through my involvement in high-impact projects, I developed strong problem-solving and analytical skills while ensuring efficient and effective software solutions.',
+        description: 'Analyzed software requirements to enhance backend systems and frontend UX solutions, working closely with cross-functional teams to identify needs, design scalable solutions, and optimize overall functionality. Gainined hands-on experience in troubleshooting, system analysis, and performance optimization. Through my involvement in high-impact projects, I developed strong problem-solving and analytical skills while ensuring efficient and effective software solutions.',
         location: 'Tartu',
     },
     {

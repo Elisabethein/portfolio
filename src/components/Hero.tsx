@@ -1,6 +1,5 @@
 import React from 'react';
 import { ReactTyped } from "react-typed";
-import Visualization from './Visualization';
 
 const Hero: React.FC = () => {
   return (

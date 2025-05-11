@@ -38,18 +38,27 @@ html {
   z-index: 1;
 }
 
-@keyframes scroll-horizontal {
+@keyframes pingpong-scroll {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(var(--scroll-distance));
   }
 }
 
-.animate-scroll {
-  animation: scroll-horizontal 40s linear infinite;
+.animate-pingpong-scroll {
+  display: flex;
+  width: fit-content;
+  will-change: transform;
+  animation-play-state: running;
 }
+
+.group:hover .animate-pingpong-scroll {
+  animation-play-state: paused;
+}
+
+
 
 @keyframes twinkle {
   0%, 100% { opacity: 0; }

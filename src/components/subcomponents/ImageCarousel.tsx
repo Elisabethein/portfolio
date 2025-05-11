@@ -24,8 +24,6 @@ const images = [
 ];
 
 const AboutCarousel = () => {
-  const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
-
   return (
     <div className="mt-8 max-w-4xl mx-auto">
       <Swiper

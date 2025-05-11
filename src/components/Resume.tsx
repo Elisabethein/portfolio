@@ -4,7 +4,7 @@ import { resumeData } from "../data/Resume";
 
 const Resume: React.FC = () => {
     return (
-        <section className="mt-40" id="resume">
+        <section className="mt-20" id="resume">
             <div className="">
                 
             <h2 className="text-3xl font-bold text-orange-200 mb-4">My Resume</h2>

@@ -2,6 +2,14 @@ import type { Resume } from '../types/Resume';
 
 export const resumeData: Resume[] = [
     {
+        position: 'Coolbet Code Academy',
+        company: 'Coolbet',
+        startDate: 'June 2025',
+        endDate: '...',
+        description: 'Coming soon! This is a new program that I will be starting in June 2025, focusing on advanced software development skills and real-world project experience.',
+        location: 'Tallinn',
+    },
+    {
         position: 'Full-Stack Developer & Researcher',
         company: 'University of Tartu',
         startDate: 'September 2024',

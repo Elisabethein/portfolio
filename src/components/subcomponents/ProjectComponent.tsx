@@ -13,7 +13,7 @@ const ProjectComponent = ({ project }: { project: Project }) => {
                 </div>
 
                 <div className="z-10 mb-4">
-                    <p className="text-base text-white leading-relaxed">{project.description}</p>
+                    <p className="text-base text-white leading-loose">{project.description}</p>
                 </div>
 
                 <div className="mt-auto z-10 pt-4 space-y-2">

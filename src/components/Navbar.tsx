@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
 
 
       return (
-        <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[95%] sm:w-auto">
+        <nav className="fixed top-4 z-50 sm:w-auto">
           <ul className="flex flex-wrap justify-center bg-orange-100/20 backdrop-blur-md px-4 py-2 rounded-full gap-2 sm:gap-3">
             {links.map((link) => (
               <li key={link.name}>

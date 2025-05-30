@@ -15,9 +15,15 @@ function App() {
   return (
     <>
       <SparkleBackground />
-      <Navbar />
       <SocialSidebar />
-      <main className='w-full min-h-screen bg-[#060606] flex justify-center items-center'>
+      
+      <div className="w-full ml-7">
+        <div className="flex justify-center">
+          <Navbar />
+        </div>
+      </div>
+
+      <main className='w-full min-h-screen bg-[#060606] flex justify-center items-center cursor-default'>
       <div className="max-w-[90%] w-full ml-14">
         <section id="hero" className='scroll-mt-40'><Hero /></section>
         <section id="about" className='scroll-mt-20'><About /></section>
@@ -27,7 +33,12 @@ function App() {
         <section id="contact" className='scroll-mt-40'><Contact /></section>
         </div>
       </main>
-      <Footer />
+
+      <div className="w-full flex justify-center">
+        <div className="max-w-[90%] w-full ml-14">
+          <Footer />
+        </div>
+      </div>
     </>
   )
 }

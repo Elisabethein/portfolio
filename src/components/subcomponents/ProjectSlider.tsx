@@ -20,6 +20,9 @@ const ProjectSlider = ({ projects }: { projects: Project[] }) => {
 
   return (
     <div className="overflow-hidden w-full relative group" ref={containerRef}>
+        <div className="pointer-events-none absolute top-0 left-0 h-full w-10 z-10 bg-gradient-to-r from-[#060606] to-transparent" />
+
+        <div className="pointer-events-none absolute top-0 right-0 h-full w-10 z-10 bg-gradient-to-l from-[#060606] to-transparent" />
       <div
         ref={trackRef}
         style={{

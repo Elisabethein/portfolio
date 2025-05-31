@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
 
         <div className="mt-8">
           <img
-            src="/src/assets/profile_pic.jpg"
+            src={`${import.meta.env.BASE_URL}images/profile_pic.jpg`}
             alt="Elisabet Hein"
             className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover shadow-2xl border-4 border-orange-100 relative z-10"
           />

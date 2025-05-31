@@ -11,9 +11,10 @@ const Resume: React.FC = () => {
         <section className="mt-20" id="resume">
             <div> 
                 <h2 className="text-3xl font-bold text-orange-200 mb-4">My Resume</h2>
-                <a href="/Elisabet_Hein_CV_2025.pdf"
+                <a href="/portfolio/Elisabet_Hein_CV_2025.pdf"
                     download
                     className="inline-flex items-center gap-2 bg-orange-100/20 font-medium px-4 py-2 rounded-full m-1 transition-transform duration-200 hover:scale-105 hover:animate-wiggle"
+                    type="application/pdf"
                     >
                         Download PDF
                 </a>

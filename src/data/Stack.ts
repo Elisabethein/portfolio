@@ -1,9 +1,8 @@
 import type { StackGroup } from "../types/Stack";
-import { FaHtml5, FaCss3Alt, FaVuejs, FaNodeJs, FaPython, FaGitAlt, FaGithub, FaGitlab, FaLinux, FaTerminal, FaJira, FaTrello } from "react-icons/fa";
-import { SiJavascript, SiUml, SiVitest, SiJunit5, SiIntellijidea, SiHuggingface, SiGooglecolab, SiJupyter, SiPytorch, SiKeras, SiTensorflow, SiScikitlearn, SiNumpy, SiPandas, SiTypescript, SiReact, SiVite, SiTailwindcss, SiPostman, SiCypress, SiHibernate, SiExpress, SiOracle, SiNginx } from "react-icons/si";
+import { FaHtml5, FaCss3Alt, FaVuejs, FaNodeJs, FaPython, FaGitAlt, FaGithub, FaGitlab, FaJira, FaTrello } from "react-icons/fa";
+import { SiJavascript, SiUml, SiVitest, SiJunit5, SiHuggingface, SiGooglecolab, SiJupyter, SiPytorch, SiKeras, SiTensorflow, SiScikitlearn, SiNumpy, SiPandas, SiTypescript, SiReact, SiVite, SiTailwindcss, SiPostman, SiCypress, SiHibernate, SiExpress, SiOracle, SiNginx } from "react-icons/si";
 import { DiJava, DiDocker, DiPostgresql } from "react-icons/di";
 import { BiLogoSpringBoot } from "react-icons/bi";
-import { VscVscode } from "react-icons/vsc";
 
 
 export const stackData: StackGroup[] = [

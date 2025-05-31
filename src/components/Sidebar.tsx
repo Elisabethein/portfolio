@@ -10,7 +10,7 @@ const SocialSidebar: React.FC = () => {
       <a href="https://www.linkedin.com/in/elisabet-hein-0862a3259/" target="_blank" rel="noopener noreferrer">
         <FaLinkedin size={22} className="text-orange-300 hover:text-orange-500 transition" />
       </a>
-      <a href="/Elisabet_Hein_CV_2025.pdf" download>
+      <a href="/portfolio/Elisabet_Hein_CV_2025.pdf" download type="application/pdf">
         <HiOutlineDocumentDownload size={22} className="text-orange-300 hover:text-orange-500 transition" />
       </a>
       <a href="mailto:elisabethein28@gmail.com">

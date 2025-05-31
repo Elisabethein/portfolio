@@ -1,24 +1,21 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/effect-coverflow';
 import { EffectCoverflow, Navigation } from 'swiper/modules';
 
 const images = [
   {
-    src: '/vatican.jpg',
+    src: '/portfolio/images/vatican.jpg',
     caption: 'Sending smiles from Vatican!',
   },
   {
-    src: '/cat.jpg',
+    src: '/portfolio/images/cat.jpg',
     caption: 'My tiny sidekick, always nearby.',
   },
   {
-    src: '/shoes.jpg',
+    src: '/portfolio/images/shoes.jpg',
     caption: 'A splash of creativity - my custom shoe art!',
   },
   {
-    src: '/graduation.jpg',
+    src: '/portfolio/images/graduation.jpg',
     caption: 'Proud graduation moment 💛',
   },
 ];
